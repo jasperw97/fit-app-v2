@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "fitnessapp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "fitnesapp/wsgi.py"
+      }
+    ]
+  }
